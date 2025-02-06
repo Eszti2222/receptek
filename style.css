@@ -12,6 +12,7 @@ main {
 
 header {
     flex: 0 0 100%;
+    border: #46003c solid 2px;
 }
 
 article {
@@ -30,7 +31,6 @@ article section img {
     height: 200px;
     width: 200px;
 }
-
 
 nav {
     flex: 0 0 30%;
