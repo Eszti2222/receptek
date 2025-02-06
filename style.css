@@ -12,6 +12,7 @@ main {
 
 header {
     flex: 0 0 100%;
+    border: #46003c solid 2px;
 }
 
 article {
