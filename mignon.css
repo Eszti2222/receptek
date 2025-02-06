@@ -1,0 +1,46 @@
+.migJellemzes{
+    list-style: none;
+    border: 1px dotted gray;
+    padding: 10px;
+}
+.migAllergen ,.migAllergen li{
+    color: rgb(230, 54, 54);
+    font-weight: bold;
+    list-style: none;
+    flex: 0 0 100%;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mignon1{
+    flex: 0 0 20%;
+
+}
+.migKep{
+    flex: 0 1 70%;
+
+}
+.migKep img{
+    width: 100%;
+}
+.mignon{
+    flex: 0 0 40%;
+}
+@media screen and(max-width: 700px;){
+
+    .mignon1{
+        flex: 0 0 10%;
+    
+    }
+    .migKep{
+        flex: 0 1 60%;
+    
+    }
+    .migKep img{
+        width: 100%;
+    }
+    .mignon{
+        flex: 0 0 30%;
+    }
+}
