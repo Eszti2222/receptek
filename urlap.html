@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=ű, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="urlapStilus.css">
     <title>Document</title>
 </head>
 <body>
@@ -34,19 +35,19 @@
                         <legend>Recept</legend>
                         <label for="rnev">Recept neve</label>
                         <input type="text" id="rnev" name="rnev" value=""><br>
-                        <label for="forras">Recept forrása</label>
-                        <p>Csak akkor kell kitöltened, ha saját receptes oldalad szeretnéd népszerűsíteni vele.</p>
-                        <input type="text" id="forras" name="forras" value=""><br>
+                        <label for="forras" id="forras">Recept forrása</label><br>
+                        <p id="csak">Csak akkor kell kitöltened, ha saját receptes oldalad szeretnéd népszerűsíteni vele.</p><br>
+                        <input type="text" id="forras" name="forras" value=""><br><br>
                         <label for="hozzavalok">Hozzávalók</label>
-                        <textarea id="hozzavalok" name="hozzavalok" rows="8" cols="30"></textarea>
+                        <textarea id="hozzavalok" name="hozzavalok" rows="8" cols="30"></textarea><br>
                         <label for="elkeszit">Elkészítés</label>
-                        <textarea id="elkeszit" name="elkeszit" rows="10" cols="30"></textarea>
+                        <textarea id="elkeszit" name="elkeszit" rows="10" cols="30"></textarea><br>
                         <label for="kepCsatol">Kép csatolása</label>
-                        <input type="file" id="kepCsatol" name="image" accept="image/*">
+                        <input type="file" id="kepCsatol" name="image" accept="image/*"><br>
                         <label for="elido">Elkészítési idő (percben!)</label>
                         <input type="text" id="elido" name="elido" value=""><br>
                         <label for="hanyfo">Hány főre készül</label>
-                        <input type="number" id="hanyfo" name="hanyfo" min="1" value="1">
+                        <input type="number" id="hanyfo" name="hanyfo" min="1" value="1"><br>
                         <label for="megj">Egyéb megjegyzés</label>
                         <textarea id="megj" name="megj" rows="10" cols="30"></textarea>
                     </fieldset>
@@ -54,54 +55,58 @@
                         <legend>Kategóriák/Kulcsszavak</legend>
                         <fieldset>
                             <legend>Fő kategóriák</legend>
-                            <input type="checkbox" id="elo" name="elo" value="Előétel">
-                            <label for="elo"> Előétel</label><br>
-                            <input type="checkbox" id="fo" name="fo" value="Főétel">
-                            <label for="fo"> Főétel</label><br>
-                            <input type="checkbox" id="szosz" name="szosz" value="Szósz">
-                            <label for="szosz"> Szósz</label><br>
-                            <input type="checkbox" id="ital" name="ital" value="Ital">
-                            <label for="ital"> Ital</label><br>
-                            <input type="checkbox" id="sal" name="sal" value="Saláta">
-                            <label for="sal"> Saláta</label><br>
-                            <input type="checkbox" id="lev" name="lev" value="Leves">
-                            <label for="lev"> Leves</label><br>
-                            <input type="checkbox" id="süti" name="süti" value="Sütemény">
-                            <label for="süti"> Sütemény</label><br>
-                            <input type="checkbox" id="ed" name="ed" value="Édesség">
-                            <label for="ed"> Édesség</label><br>
+                            <label for="elo"> Előétel</label>
+                            <input type="checkbox" id="elo" name="elo" value="Előétel"><br>
+                            <label for="fo"> Főétel</label>                        
+                            <input type="checkbox" id="fo" name="fo" value="Főétel"><br> 
+                            <label for="szosz"> Szósz</label>
+                            <input type="checkbox" id="szosz" name="szosz" value="Szósz"><br> 
+                            <label for="ital"> Ital</label>
+                            <input type="checkbox" id="ital" name="ital" value="Ital"><br> 
+                            <label for="sal"> Saláta</label>
+                            <input type="checkbox" id="sal" name="sal" value="Saláta"><br> 
+                            <label for="lev"> Leves</label>
+                            <input type="checkbox" id="lev" name="lev" value="Leves"><br> 
+                            <label for="süti"> Sütemény</label>
+                            <input type="checkbox" id="süti" name="süti" value="Sütemény"><br> 
+                            <label for="ed"> Édesség</label>
+                            <input type="checkbox" id="ed" name="ed" value="Édesség"><br> 
+                            
                         </fieldset>
                         <fieldset>
                             <legend>Allergének</legend>
-                            <input type="checkbox" id="tojas" name="tojas" value="Tojás">
-                            <label for="tojas"> Tojás</label><br>
-                            <input type="checkbox" id="tej" name="tej" value="Tej">
-                            <label for="tej"> Tej</label><br>
-                            <input type="checkbox" id="cukor" name="cukor" value="Cukor">
-                            <label for="cukor"> Cukor</label><br>
-                            <input type="checkbox" id="liszt" name="liszt" value="Liszt">
-                            <label for="liszt"> liszt</label><br>
+                            <label for="tojas"> Tojás</label>
+                            <input type="checkbox" id="tojas" name="tojas" value="Tojás"><br> 
+                            <label for="tej"> Tej</label>
+                            <input type="checkbox" id="tej" name="tej" value="Tej"><br> 
+                            <label for="cukor"> Cukor</label>
+                            <input type="checkbox" id="cukor" name="cukor" value="Cukor"><br> 
+                            <label for="liszt"> liszt</label>
+                            <input type="checkbox" id="liszt" name="liszt" value="Liszt"><br> 
+                            
                         </fieldset>
                         <fieldset>
                             <legend>Kinek ajánlott</legend>
-                            <input type="radio" id="kezdo" name="kinekAjanlott" value="Kezdőknek">
-                            <label for="kezdo">Kezdőknek</label><br>
-                            <input type="radio" id="halado" name="kinekAjanlott" value="Haladóknak">
-                            <label for="halado">Haladóknak</label><br>
-                            <input type="radio" id="profik" name="kinekAjanlott" value="Profiknak">
+                            <label for="kezdo">Kezdőknek</label>
+                            <input type="radio" id="kezdo" name="kinekAjanlott" value="Kezdőknek"><br>
+                            <label for="halado">Haladóknak</label>
+                            <input type="radio" id="halado" name="kinekAjanlott" value="Haladóknak"><br>
                             <label for="profik">Profiknak</label>
+                            <input type="radio" id="profik" name="kinekAjanlott" value="Profiknak"><br>
+                            
                         </fieldset>
                         <fieldset>
                             <legend>Megfizethetőség</legend>
-                            <input type="radio" id="draga" name="mennyibeKerul" value="Drága">
-                            <label for="draga">Drága</label><br>
-                            <input type="radio" id="megfizeth" name="mennyibeKerul" value="Megfizethető">
-                            <label for="megfizeth">Megfizethető</label><br>
-                            <input type="radio" id="olcso" name="mennyibeKerul" value="Olcsó">
+                            <label for="draga">Drága</label>
+                            <input type="radio" id="draga" name="mennyibeKerul" value="Drága"><br>
+                            <label for="megfizeth">Megfizethető</label>
+                            <input type="radio" id="megfizeth" name="mennyibeKerul" value="Megfizethető"><br>
                             <label for="olcso">Olcsó</label>
+                            <input type="radio" id="olcso" name="mennyibeKerul" value="Olcsó"><br>
+                            
                         </fieldset>
                     </fieldset>
-                    <br><br><input type="submit" value="Feltöltés">
+                    <br><br><input id="feltolt" type="submit" value="Feltöltés">
                 </form>
             </section>
         </article>
