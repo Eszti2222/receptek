@@ -6,16 +6,20 @@ main {
     width: 80%;
     max-width: 1000px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-nav {
-    display: flex;
+header {
+    flex: 0 0 100%;
 }
 
 article {
+    flex: 0 0 70%;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    padding: 10px;
 }
 
 section {
@@ -27,7 +31,13 @@ article section img {
     width: 200px;
 }
 
-ul {
+
+nav {
+    flex: 0 0 30%;
+    background-color: pink;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -35,14 +45,14 @@ ul {
     background-color: pink;
 }
   
-li a {
+nav li a {
     display: block;
     color: #530038;
     padding: 8px 16px;
     text-decoration: none;
 }
   
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: #46003c;
     color: pink;
 }
