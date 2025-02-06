@@ -55,3 +55,13 @@ nav li a:hover:not(.active) {
     background-color: #46003c;
     color: pink;
 }
+.migJellemzes{
+    list-style: none;
+    border: 1px dotted gray;
+    padding: 10px;
+}
+.migAllergen ,.migAllergen li{
+    color: rgb(230, 54, 54);
+    font-weight: bold;
+    list-style: none;
+}
