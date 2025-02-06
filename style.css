@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+}
