@@ -2,17 +2,32 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(kepek/hatter5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+}
+
 main {
     width: 80%;
     max-width: 1000px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    background-color: antiquewhite;
+    border: #46003c solid 2px;
+    box-shadow: 20px 20px rgb(190, 112, 190);
 }
 
 header {
     flex: 0 0 100%;
     border: #46003c solid 2px;
+    padding: 40px;
+    text-align: center;
+    background: pink;
+    color: #530038;
+    font-size: 30px;
 }
 
 article {
@@ -25,9 +40,14 @@ article {
 
 section {
     flex: 1 0 25%;
+    background-color:burlywood;
+    box-shadow: 10px 10px rgb(136, 113, 83);
 }
 
 article section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 200px;
     width: 200px;
 }
@@ -56,13 +76,28 @@ nav li a:hover:not(.active) {
     background-color: #46003c;
     color: pink;
 }
-.migJellemzes{
-    list-style: none;
-    border: 1px dotted gray;
-    padding: 10px;
+
+.glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
 }
-.migAllergen ,.migAllergen li{
-    color: rgb(230, 54, 54);
-    font-weight: bold;
-    list-style: none;
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+@media screen and (max-width: 700px){
+    nav{
+        flex: 0 0 100%;
+    }
+    article{
+        flex: 0 0 100%;
+    }
 }
