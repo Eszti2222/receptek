@@ -82,7 +82,11 @@ nav li a:hover:not(.active) {
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
 }
-
+button{
+    max-width: 100%;
+    background-color:#46003c;
+    color: #ccc;
+}
 
 @-webkit-keyframes glow {
     from {
